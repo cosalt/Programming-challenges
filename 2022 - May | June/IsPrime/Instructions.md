@@ -1,6 +1,6 @@
 ## Instructions
 
-#An algorithm is described as follows:
+# An algorithm is described as follows:
 
 Input an integer value.
 Jump to step 6 if the value is less than zero.
