@@ -1,4 +1,5 @@
-Instructions
+## Instructions
+
 An algorithm is described as follows:
 
 Input an integer value.
