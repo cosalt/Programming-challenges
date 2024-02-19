@@ -10,4 +10,4 @@ A procedure Summarise() will calculate the average of three consecutive values f
 
 This will be repeated for all values in Array1.
 
-![Image1](
+![Image1](https://github.com/cosalt/Programming-challenges/blob/69c1c2d30c8b9ad499035db2ba01a437320e79cb/2022%20-%20Oct%20%7C%20Nov/2.%20Summarise%20Sesnors/images/image%20001.png)
