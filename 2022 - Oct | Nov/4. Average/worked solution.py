@@ -5,3 +5,4 @@ while index < 7:
     total = total + average
   else:
     total = total + last
+update(userid, total)
