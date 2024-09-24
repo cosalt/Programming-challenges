@@ -1,0 +1,68 @@
+import random
+import time
+alphabet = ["a", 'b', 'c', 'd', 'e', 'f', 'g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',]
+h = "h"
+e = 'e'
+l = 'l'
+o = 'o'
+w = 'w'
+r = 'r'
+d = 'd'
+def helloworld():
+    global x
+    while True:
+        x = random.randint(0, 25)
+        time.sleep(0.05)
+        print(alphabet[x])
+        if alphabet[x] == h:
+            while True:
+                x = random.randint(0, 25)
+                time.sleep(0.05)
+                print(h + alphabet[x])
+                if alphabet[x] == e:
+                    while True:
+                        x = random.randint(0, 25)
+                        time.sleep(0.05)
+                        print(h + e + alphabet[x])
+                        if alphabet[x] == l:
+                            while True:
+                                x = random.randint(0, 25)
+                                time.sleep(0.05)
+                                print(h + e + l + alphabet[x])
+                                if alphabet[x] == l:
+                                    while True:
+                                        x = random.randint(0, 25)
+                                        time.sleep(0.05)
+                                        print(h + e + l + l + alphabet[x])
+                                        if alphabet[x] == o:
+                                            while True:
+                                                x = random.randint(0, 25)
+                                                time.sleep(0.05)
+                                                print(h + e + l + l + o + " " + alphabet[x])
+                                                if alphabet[x] == w:
+                                                    while True:
+                                                        x = random.randint(0, 25)
+                                                        time.sleep(0.05)
+                                                        print(h + e + l + l + o + " " + w + alphabet[x])
+                                                        if alphabet[x] == o:
+                                                            while True:
+                                                                x = random.randint(0, 25)
+                                                                time.sleep(0.05)
+                                                                print(h + e + l + l + o + " " + w + o + alphabet[x])
+                                                                if alphabet[x] == r:
+                                                                    while True:
+                                                                        x = random.randint(0, 25)
+                                                                        time.sleep(0.05)
+                                                                        print(h + e + l + l + o + " " + w + o + r + alphabet[x])
+                                                                        if alphabet[x] == l:
+                                                                            while True:
+                                                                                x = random.randint(0, 25)
+                                                                                time.sleep(0.05)
+                                                                                print(h + e + l + l + o + " " + w + o + r + l + alphabet[x])
+                                                                                if alphabet[x] == d:
+                                                                                    while True:
+                                                                                        x = random.randint(0, 25)
+                                                                                        time.sleep(0.05)
+                                                                                        print(h + e + l + l + o + " " + w + o + r + l + d)
+                                                                                        return (h + e + l + l + o + " " + w + o + r + l + d + "!")
+print(helloworld())
