@@ -43,3 +43,9 @@ while True:
                 break
             else:
                 print("Invalid input")
+    elif 'n' in choice.lower():
+        print("end. ")
+        break
+    else:
+        print('Invalid input!')
+    print()
