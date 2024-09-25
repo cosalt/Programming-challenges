@@ -17,3 +17,11 @@ def find_winner(user_move, computer_move):
     elif [user_move, computer_move] in negative:
         return -1
     return 0
+
+while True:
+    choice = input("Do you wanna play (y/n): ")
+    if 'y' in choice.lower():
+        computer_move = get_computer_move()
+        while True:
+            move = input("Select a move ('r' for rock/'p' for paper/'s' for scissor): ").lower()
+            print(f"Computer's Move: {computer_move}")
