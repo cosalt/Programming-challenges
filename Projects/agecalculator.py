@@ -40,3 +40,6 @@ for y in range(begin_year, end_year):
 leap_year = judge_leap_year(localtime.tm_year)
 for m in range(1, localtime.tm_mon):
     day = day + month_days(m, leap_year)
+
+day = day + localtime.tm_mday
+print(f"{name}'s age is {year} years or {month} months or {day} days")
