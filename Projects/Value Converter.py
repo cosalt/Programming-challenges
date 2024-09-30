@@ -68,3 +68,31 @@ def convert_lengths():
             break
         else:
             print("Invalid input. Please try again.\n")
+
+def main():
+    """Main function for the value converter."""
+
+    print("===== Welcome to Value Converter =====")
+
+    while True:
+        print("\nChoose an option:")
+        print("1. Convert temperature")
+        print("2. Convert currency")
+        print("3. Convert lengths")
+        print("4. Exit")
+        choice = int(input("Enter your choice: "))
+
+        if choice == 1:
+            convert_temperature()
+        elif choice == 2:
+            convert_currency()
+        elif choice == 3:
+            convert_lengths()
+        elif choice == 4:
+            print("Exiting...")
+            break
+        else:
+            print("Invalid input. Please try again.\n")
+
+if __name__ == "__main__":
+    main()
