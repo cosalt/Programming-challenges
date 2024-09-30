@@ -87,7 +87,11 @@ def main():
         elif choice == 3:
             convert_lengths()
         elif choice == 4:
-            print("Exiting...")
+            message = "Exiting..."
+            for letter in message:
+                print(letter, end="", flush=True)
+                time.sleep(5)
+            print()
             break
         else:
             print("Invalid input. Please try again.\n")
