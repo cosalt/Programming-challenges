@@ -71,9 +71,7 @@ def convert_lengths():
 
 def main():
     """Main function for the value converter."""
-
-    print("===== Welcome to Value Converter =====")
-
+    print("Converter program...")
     while True:
         print("\nChoose an option:")
         print("1. Convert temperature")
