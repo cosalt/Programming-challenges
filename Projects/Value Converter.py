@@ -44,3 +44,27 @@ def convert_currency():
             break
         else:
             print("Invalid input. Please try again.\n")
+def convert_lengths():
+    """Converts lengths between centimeters and feet/inches."""
+
+    while True:
+        print("\nChoose a conversion:")
+        print("1. Centimeters to feet and inches")
+        print("2. Feet and inches to centimeters")
+        choice = int(input("Enter your choice: "))
+
+        if choice == 1:
+            value = float(input("Enter length in centimeters: "))
+            inches = value / 2.54
+            feet = inches // 12
+            inches %= 12
+            print(f"{value} centimeters is equal to {feet} feet and {inches} inches.\n")
+            break
+        elif choice == 2:
+            feet = float(input("Enter length in feet: "))
+            inches = float(input("Enter length in inches: "))
+            length = (feet * 12 + inches) * 2.54
+            print(f"{feet} feet and {inches} inches is equal to {length} centimeters.\n")
+            break
+        else:
+            print("Invalid input. Please try again.\n")
