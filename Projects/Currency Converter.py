@@ -1,19 +1,20 @@
-import forex_python.converter
+from currencyconverter import CurrencyConverter
 
 def convert_currency(base_currency, target_currency, amount):
     """Converts currencies in real time.
 
-    args:
-        base_currency (str) - the base currency to convert from.
-        target_currency (str) - the target currency to convert to.
-        amount (float) = the amount to convert.
+    Args:
+        base_currency (str): The base currency to convert from.
+        target_currency (str): The target currency to convert to.
+        amount (float): The amount to convert.
 
-    returns:
-        float - the converted amount.
+    Returns:
+        float: The converted amount.
     """
 
     try:
-        converted_amount = forex_python.converter.convert(base_currency, target_currency, amount)
+        converter = CurrencyConverter()
+        converted_amount = converter.convert(amount, base_currency, target_currency)
         return converted_amount
     except Exception as e:
         print(f"Error: {e}")
