@@ -23,12 +23,9 @@ def convert_currency(base_currency, target_currency, amount):
 def main():
     while True:
         print("\nChoose a conversion:")
-        print("Enter the base currency code:")
-        base_currency = input().upper()
-        print("Enter the target currency code:")
-        target_currency = input().upper()
-        print("Enter the amount to convert:")
-        amount = float(input())
+        base_currency = input("Enter the base currency code:").upper()
+        target_currency = input("Enter the target currency code:").upper()
+        amount = float(input("Enter the amount to convert:" ))
 
         converted_amount = convert_currency(base_currency, target_currency, amount)
         print(f"{amount} {base_currency} is equal to {converted_amount} {target_currency}.\n")
