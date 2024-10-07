@@ -1,14 +1,5 @@
 import random
 
-
-
-
-
-
-
-
-
-
 # list of words
 words = ['python', 'java', 'hangman', 'computer', 'programming', 'science', 'mathematics']
 
