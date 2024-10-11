@@ -42,3 +42,6 @@ funcs = {'a': a, 'b': b, 'c': c}
 f = funcs.get(option, default)
 # use .get(), grab the option, if can't execute default
 f()
+
+# quicker way of above
+funcs.get(option, default)()
