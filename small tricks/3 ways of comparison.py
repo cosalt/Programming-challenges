@@ -12,6 +12,7 @@ def c():
 def default():
   print("Default")
 
+
 # can be input
 option = "b"
 # traditional, if statement
