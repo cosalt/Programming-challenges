@@ -1,0 +1,2 @@
+# Movies API
+This API will provide data for an initial collection of 50 movies. Users can access information such as the movie title, release date, and description. Each movie is assigned a unique ID ranging from 1 to 50, which can be used to identify specific movies. Additionally, the API allows users to update existing entries, modify details, add new movies, and delete any movie record as needed.
